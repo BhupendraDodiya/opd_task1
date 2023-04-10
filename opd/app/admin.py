@@ -8,4 +8,4 @@ class DoctorAdmin(admin.ModelAdmin):
 
 @admin.register(Patient)
 class DoctorAdmin(admin.ModelAdmin):
-    list_display = ['id','name','contact','email','address','issue','select_doctor','appointment']
+    list_display = ['id','name','contact','email','address','issue','select_doctor']

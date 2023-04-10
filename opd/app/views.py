@@ -2,6 +2,11 @@ from django.shortcuts import render
 from .models import *
 
 # Create your views here.
+def home(request):
+    doc = Doctor.objects.all()
+    pat = Patient.objects.all()
+    return render(request,'home.html',{'doc':doc,'pat':pat})
+
 def doctor_dashboard(request):
     doc = Doctor.objects.all()
     return render(request,'Dashboard.html',{'doc':doc})

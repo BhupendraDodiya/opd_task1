@@ -35,5 +35,5 @@ class Patient(models.Model):
     address = models.CharField(max_length=100)
     issue = models.CharField(max_length=100,choices=category_choices)
     select_doctor = models.ForeignKey(Doctor ,on_delete=models.CASCADE)
-    appointment = models.DateTimeField()
+    # appointment = models.DateTimeField()
    
